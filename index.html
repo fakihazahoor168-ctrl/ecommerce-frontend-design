@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina | Premium E-Commerce</title>
+    <meta name="description" content="Discover premium collections with unmatched quality and modern aesthetics.">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Using Outfit for Display and Inter for Body -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <!-- Header Component -->
+    <header class="header" id="mainHeader">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo_round.png" alt="Lumina Rounded Logo" class="nav-logo rounded-logo">
+                    <span class="logo-text">LUMINA</span>
+                </a>
+            </div>
+
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#" class="nav-link">Shop</a></li>
+                    <li><a href="#" class="nav-link">Collections</a></li>
+                    <li><a href="#" class="nav-link">Journal</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-bar">
+                    <i data-feather="search" class="search-icon"></i>
+                    <input type="search" placeholder="Search..." class="search-input" aria-label="Search">
+                </div>
+                <button class="icon-btn" aria-label="Account">
+                    <i data-feather="user"></i>
+                </button>
+                <button class="icon-btn cart-btn" aria-label="Cart">
+                    <i data-feather="shopping-bag"></i>
+                    <span class="cart-badge">2</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <span class="hero-subtitle">NEW COLLECTION 2026</span>
+                <h1 class="hero-title">Redefining<br>Modern Luxury</h1>
+                <p class="hero-text">Experience the fusion of minimalist design and uncompromising quality. Curated for
+                    the distinguished individual.</p>
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-primary">Explore Collection</a>
+                    <a href="#" class="btn btn-outline">Watch Film <i data-feather="play-circle"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spacer for aesthetics -->
+        <div class="section-spacing"></div>
+
+        <!-- New Arrivals Section -->
+        <section class="container new-arrivals">
+            <div class="section-header">
+                <h2>The Essentials</h2>
+                <a href="#" class="view-all-link">View All Pieces <i data-feather="arrow-right"></i></a>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="images/product1.png" alt="Premium Leather Bag" class="product-image">
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Add to cart"><i
+                                    data-feather="shopping-bag"></i></button>
+                            <button class="action-btn" aria-label="Add to wishlist"><i
+                                    data-feather="heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Accessories</span>
+                        <h3 class="product-name">Monolith Leather Tote</h3>
+                        <p class="product-price">$850.00</p>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="images/product2.png" alt="Designer Sunglasses" class="product-image">
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Add to cart"><i
+                                    data-feather="shopping-bag"></i></button>
+                            <button class="action-btn" aria-label="Add to wishlist"><i
+                                    data-feather="heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Eyewear</span>
+                        <h3 class="product-name">Obsidian Aviators</h3>
+                        <p class="product-price">$320.00</p>
+                    </div>
+                </div>
+
+                <!-- Product 3 (Duplicate for spacing logic) -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="images/product1.png" alt="Premium Leather Bag Variation" class="product-image">
+                        <div class="product-badge">Best Seller</div>
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Add to cart"><i
+                                    data-feather="shopping-bag"></i></button>
+                            <button class="action-btn" aria-label="Add to wishlist"><i
+                                    data-feather="heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Accessories</span>
+                        <h3 class="product-name">Monolith Mini</h3>
+                        <p class="product-price">$650.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-spacing"></div>
+
+        <!-- Features / Brand Value Section -->
+        <section class="brand-values">
+            <div class="container value-grid">
+                <div class="value-item">
+                    <i data-feather="truck" class="value-icon"></i>
+                    <h3>Complimentary Global Shipping</h3>
+                    <p>Experience seamless delivery to over 100 countries.</p>
+                </div>
+                <div class="value-item">
+                    <i data-feather="shield" class="value-icon"></i>
+                    <h3>Lifetime Warranty</h3>
+                    <p>Our commitment to craftsmanship is guaranteed forever.</p>
+                </div>
+                <div class="value-item">
+                    <i data-feather="refresh-cw" class="value-icon"></i>
+                    <h3>Conscious Returns</h3>
+                    <p>30-day extended returns with carbon-neutral shipping.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h2>LUMINA</h2>
+                <p>Elevating daily life through exceptional design and enduring quality.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i data-feather="instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i data-feather="twitter"></i></a>
+                    <a href="#" aria-label="Pinterest"><i data-feather="aperture"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="link-group">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="#">The Fall Collection</a></li>
+                        <li><a href="#">Gift Guide</a></li>
+                        <li><a href="#">Lookbooks</a></li>
+                        <li><a href="#">Object Galleries</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-group">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Client Care</a></li>
+                        <li><a href="#">Book an Appointment</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-group">
+                    <h3>House</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Terms & Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Lumina. All rights reserved.</p>
+            <div class="payment-methods">
+                <span>VISA</span>
+                <span>MASTERCARD</span>
+                <span>AMEX</span>
+                <span>APPLE PAY</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Feather Icons
+        feather.replace();
+
+        // Header scroll effect
+        const header = document.getElementById('mainHeader');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>
