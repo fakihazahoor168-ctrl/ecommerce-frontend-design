@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand - One-stop shop for everything</title>
+    <meta name="description" content="Discover premium electronics, furniture, gadgets and more on Brand, your trusted e-commerce marketplace.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container header-top">
+            <a href="/" class="logo" id="header-logo">
+                <i class="ph ph-cube" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+                <span>Brand</span>
+            </a>
+
+            <div class="search-container">
+                <select id="search-category" name="category">
+                    <option value="all">All category</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="furniture">Furniture</option>
+                    <option value="gadgets">Gadgets</option>
+                </select>
+                <input type="text" placeholder="Search" aria-label="Search" id="search-input">
+                <button type="submit" class="search-btn">Search</button>
+            </div>
+
+            <nav class="user-menu">
+                <div class="menu-item" id="profile-btn">
+                    <i class="ph ph-user"></i>
+                    <span>Profile</span>
+                </div>
+                <div class="menu-item" id="messages-btn">
+                    <i class="ph ph-chat-centered-text"></i>
+                    <span>Message</span>
+                </div>
+                <div class="menu-item" id="orders-btn">
+                    <i class="ph ph-heart"></i>
+                    <span>Orders</span>
+                </div>
+                <div class="menu-item" id="cart-btn">
+                    <i class="ph ph-shopping-cart"></i>
+                    <span>My cart</span>
+                </div>
+            </nav>
+        </div>
+
+        <nav class="navbar">
+            <div class="container nav-content">
+                <div class="nav-left">
+                    <div class="dropdown" id="all-categories-nav">
+                        <i class="ph ph-list"></i>
+                        <span>All category</span>
+                    </div>
+                    <a href="#">Hot deals</a>
+                    <a href="#">Gift boxes</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Menu item</a>
+                    <a href="#">Help</a>
+                </div>
+                <div class="nav-right">
+                    <select id="currency-select">
+                        <option value="usd">English, USD</option>
+                        <option value="eur">English, EUR</option>
+                    </select>
+                    <div class="ship-to" id="shipping-nav">
+                        <span>Ship to</span>
+                        <img src="https://flagcdn.com/w20/de.png" alt="Germany">
+                        <i class="ph ph-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Placeholder for Main Content -->
+    <main style="min-height: 400px; padding: 20px;" class="container">
+        <h1 style="text-align: center; color: var(--text-muted); margin-top: 100px;">Main Page Content Placeholder</h1>
+        <p style="text-align: center; color: var(--text-muted);">This area would contain the main e-commerce content like categories, trending items, etc.</p>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Branding Info -->
+                <div class="footer-column footer-brand">
+                    <a href="/" class="logo">
+                        <i class="ph ph-cube" style="font-size: 2rem; color: var(--primary-color);"></i>
+                        <span style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color);">Brand</span>
+                    </a>
+                    <p class="brand-info">
+                        Best information about the company gies here but now lorem ipsum is.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo"></i></a>
+                    </div>
+                </div>
+
+                <!-- Footer Columns -->
+                <div class="footer-column">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Find store</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Partnership</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Find store</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Money Refund</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>For users</h3>
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">My Orders</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Get app</h3>
+                    <div class="get-app-icons">
+                        <a href="#" id="app-store-btn">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" style="width: 124px;">
+                        </a>
+                        <a href="#" id="google-play-btn">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" style="width: 124px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>© 2023 Ecommerce.</p>
+                </div>
+                <div class="lang-selector">
+                    <div class="lang-item">
+                        <img src="https://flagcdn.com/w20/us.png" alt="English">
+                        <span>English</span>
+                        <i class="ph ph-caret-up"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
