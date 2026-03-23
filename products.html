@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brand - One-stop shop for everything</title>
-    <meta name="description" content="Discover premium electronics, furniture, gadgets and more on Brand, your trusted e-commerce marketplace.">
+    <title>Products - Brand</title>
+    <meta name="description" content="Browse our collection of premium electronics, gadgets and more.">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Phosphor Icons -->
@@ -81,149 +81,127 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container">
-        <!-- Hero Section -->
-        <section class="hero">
-            <aside class="hero-sidebar">
+    <main class="container products-wrapper">
+        <!-- Sidebar Filters -->
+        <aside class="filters-sidebar">
+            <div class="filter-group">
+                <h4>Category</h4>
                 <ul>
-                    <li><a href="#" class="active">Automobiles</a></li>
-                    <li><a href="#">Clothes and wear</a></li>
-                    <li><a href="#">Home interiors</a></li>
-                    <li><a href="#">Computer and tech</a></li>
-                    <li><a href="#">Tools, equipments</a></li>
-                    <li><a href="#">Sports and outdoor</a></li>
-                    <li><a href="#">Animal and pets</a></li>
-                    <li><a href="#">Machinery tools</a></li>
-                    <li><a href="#">More category</a></li>
+                    <li><label><input type="checkbox"> Electronics</label></li>
+                    <li><label><input type="checkbox"> Mobile accessory</label></li>
+                    <li><label><input type="checkbox"> Laptops & Computers</label></li>
+                    <li><label><input type="checkbox"> Home tech</label></li>
+                    <li><a href="#" style="color: var(--primary-color); display: block; margin-top: 10px;">See all</a></li>
                 </ul>
-            </aside>
-            <div class="hero-banner">
-                <h2>Latest trending</h2>
-                <h1>Electronic items</h1>
-                <button onclick="window.location.href='products.html'">Source now</button>
             </div>
-            <div class="hero-right">
-                <div class="hero-card">
-                    <p>Hi, user let's get stated</p>
-                    <button class="buy-now-btn" style="margin-top: 10px;">Join now</button>
-                    <button class="buy-now-btn" style="background: white; color: var(--primary-color); margin-top: 10px;">Log in</button>
-                </div>
-                <div class="hero-card orange">
-                    <p>Get US $10 off with a new supplier</p>
-                </div>
-                <div class="hero-card teal">
-                    <p>Send quotes with supplier preferences</p>
-                </div>
+            <div class="filter-group">
+                <h4>Brands</h4>
+                <ul>
+                    <li><label><input type="checkbox"> Samsung</label></li>
+                    <li><label><input type="checkbox"> Apple</label></li>
+                    <li><label><input type="checkbox"> Huawei</label></li>
+                    <li><label><input type="checkbox"> Pocco</label></li>
+                    <li><label><input type="checkbox"> Lenovo</label></li>
+                </ul>
             </div>
-        </section>
+            <div class="filter-group">
+                <h4>Price range</h4>
+                <div style="display: flex; gap: 10px; align-items: center;">
+                    <input type="number" placeholder="Min" style="width: 100%; padding: 8px; border: 1px solid var(--border-color); border-radius: 4px;">
+                    <span>-</span>
+                    <input type="number" placeholder="Max" style="width: 100%; padding: 8px; border: 1px solid var(--border-color); border-radius: 4px;">
+                </div>
+                <button class="buy-now-btn" style="margin-top: 15px; background: white; color: var(--primary-color); border: 1px solid var(--border-color);">Apply</button>
+            </div>
+            <div class="filter-group">
+                <h4>Condition</h4>
+                <ul>
+                    <li><label><input type="radio" name="condition"> Any</label></li>
+                    <li><label><input type="radio" name="condition"> Refurbished</label></li>
+                    <li><label><input type="radio" name="condition"> Brand new</label></li>
+                    <li><label><input type="radio" name="condition"> Old items</label></li>
+                </ul>
+            </div>
+            <div class="filter-group">
+                <h4>Ratings</h4>
+                <ul>
+                    <li><label><input type="checkbox"> ⭐⭐⭐⭐⭐</label></li>
+                    <li><label><input type="checkbox"> ⭐⭐⭐⭐</label></li>
+                    <li><label><input type="checkbox"> ⭐⭐⭐</label></li>
+                </ul>
+            </div>
+        </aside>
 
-        <!-- Featured Section (Electronics) -->
-        <h2 class="section-title">Deals and offers</h2>
-        <section class="featured-header">
-            <div class="featured-sidebar">
-                <h3>Hygiene and cleaning</h3>
-                <p>Offers end in:</p>
-                <div class="timer" style="display: flex; gap: 10px; margin-top: 15px;">
-                    <span style="background: #606060; color: #fff; padding: 5px 10px; border-radius: 4px;">04 Days</span>
-                    <span style="background: #606060; color: #fff; padding: 5px 10px; border-radius: 4px;">13 Hrs</span>
+        <!-- Product Grid -->
+        <section class="main-products">
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="assets/smartphone.png" alt="Smartphone" class="product-image">
+                    <div class="product-info">
+                        <p class="product-price">$99.50</p>
+                        <h3>GoPro HERO6 Black 4K Action Camera</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">7.5 Orders • Free Shipping</p>
+                        <button class="buy-now-btn">Buy Now</button>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="assets/laptop.png" alt="Laptop" class="product-image">
+                    <div class="product-info">
+                        <p class="product-price">$1,200.00</p>
+                        <h3>Canon EOS 2000D EF-S 18-55mm IS II</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">12 Orders • $10 Shipping</p>
+                        <button class="buy-now-btn">Buy Now</button>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="assets/headphones.png" alt="Headphones" class="product-image">
+                    <div class="product-info">
+                        <p class="product-price">$150.00</p>
+                        <h3>Samsung Galaxy S22 Ultra 5G - Phantom Black</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">50+ Orders • Free Shipping</p>
+                        <button class="buy-now-btn">Buy Now</button>
+                    </div>
+                </div>
+                <!-- More products... -->
+                <div class="product-card">
+                    <img src="assets/smartphone.png" alt="Smartphone" class="product-image">
+                    <div class="product-info">
+                        <p class="product-price">$45.00</p>
+                        <h3>Logitech G Pro Wireless Gaming Mouse</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">22 Orders • $5 Shipping</p>
+                        <button class="buy-now-btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/laptop.png" alt="Laptop" class="product-image">
+                    <div class="product-info">
+                        <p class="product-price">$899.00</p>
+                        <h3>Apple MacBook Air M2 - Space Gray</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">100+ Orders • Free Shipping</p>
+                        <button class="buy-now-btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/headphones.png" alt="Headphones" class="product-image">
+                    <div class="product-info">
+                        <p class="product-price">$299.00</p>
+                        <h3>Sony WH-1000XM5 Wireless Noise Cancelling</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">35 Orders • Free Shipping</p>
+                        <button class="buy-now-btn">Buy Now</button>
+                    </div>
                 </div>
             </div>
-            <div class="featured-grid">
-                <div class="item-card">
-                    <img src="assets/smartphone.png" alt="Smartphone">
-                    <p>Smart watches</p>
-                    <span class="price">-25%</span>
-                </div>
-                <div class="item-card">
-                    <img src="assets/laptop.png" alt="Laptop">
-                    <p>Laptops</p>
-                    <span class="price">-15%</span>
-                </div>
-                <div class="item-card">
-                    <img src="assets/headphones.png" alt="Headphones">
-                    <p>GoPro cameras</p>
-                    <span class="price">-40%</span>
-                </div>
-                <div class="item-card">
-                    <img src="assets/headphones.png" alt="Headphones">
-                    <p>Headphones</p>
-                    <span class="price">-20%</span>
-                </div>
-            </div>
-        </section>
-        <!-- Top Categories -->
-        <h2 class="section-title">Explore categories</h2>
-        <section class="top-categories">
-            <div class="category-card">
-                <i class="ph ph-device-mobile"></i>
-                <p>Electronics</p>
-            </div>
-            <div class="category-card">
-                <i class="ph ph-t-shirt"></i>
-                <p>Fashion</p>
-            </div>
-            <div class="category-card">
-                <i class="ph ph-house"></i>
-                <p>Home decor</p>
-            </div>
-            <div class="category-card">
-                <i class="ph ph-game-controller"></i>
-                <p>Gaming</p>
-            </div>
-            <div class="category-card">
-                <i class="ph ph-bicycle"></i>
-                <p>Sports</p>
-            </div>
-            <div class="category-card">
-                <i class="ph ph-wrench"></i>
-                <p>Tools</p>
-            </div>
-        </section>
 
-        <!-- Extra Services -->
-        <h2 class="section-title">Our extra services</h2>
-        <section class="extra-services">
-            <div class="service-card">
-                <div class="service-img" style="background: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80') center/cover;">
-                    <div class="service-icon"><i class="ph ph-globe"></i></div>
-                </div>
-                <div class="service-info">
-                    <h4>Source from Industry Hubs</h4>
-                </div>
-            </div>
-            <div class="service-card">
-                <div class="service-img" style="background: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80') center/cover;">
-                    <div class="service-icon"><i class="ph ph-shield-check"></i></div>
-                </div>
-                <div class="service-info">
-                    <h4>Customize Your Products</h4>
-                </div>
-            </div>
-            <div class="service-card">
-                <div class="service-img" style="background: url('https://images.unsplash.com/photo-1620455800201-7f00aeef12ed?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80') center/cover;">
-                    <div class="service-icon"><i class="ph ph-airplane-landing"></i></div>
-                </div>
-                <div class="service-info">
-                    <h4>Fast & Reliable Shipping</h4>
-                </div>
-            </div>
-            <div class="service-card">
-                <div class="service-img" style="background: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80') center/cover;">
-                    <div class="service-icon"><i class="ph ph-chats-circle"></i></div>
-                </div>
-                <div class="service-info">
-                    <h4>24/7 Professional Support</h4>
-                </div>
-            </div>
-        </section>
-
-        <!-- Newsletter -->
-        <section class="newsletter glass" style="margin: 60px 0; border-radius: 12px; padding: 60px;">
-            <h3>Subscribe on our newsletter</h3>
-            <p>Get daily news on upcoming offers from many suppliers all over the world</p>
-            <div class="newsletter-form">
-                <input type="email" placeholder="Email Address">
-                <button class="buy-now-btn" style="width: auto; padding: 0 30px;">Subscribe</button>
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn"><i class="ph ph-caret-left"></i></button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn"><i class="ph ph-caret-right"></i></button>
             </div>
         </section>
     </main>
@@ -306,14 +284,16 @@
 
             <!-- Footer Bottom -->
             <div class="footer-bottom">
-                <div class="copyright">
-                    <p>© 2023 Ecommerce.</p>
-                </div>
-                <div class="lang-selector">
-                    <div class="lang-item">
-                        <img src="https://flagcdn.com/w20/us.png" alt="English">
-                        <span>English</span>
-                        <i class="ph ph-caret-up"></i>
+                <div class="container">
+                    <div class="copyright">
+                        <p>© 2023 Ecommerce.</p>
+                    </div>
+                    <div class="lang-selector">
+                        <div class="lang-item">
+                            <img src="https://flagcdn.com/w20/us.png" alt="English">
+                            <span>English</span>
+                            <i class="ph ph-caret-up"></i>
+                        </div>
                     </div>
                 </div>
             </div>
