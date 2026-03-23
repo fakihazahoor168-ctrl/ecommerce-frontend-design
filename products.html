@@ -136,33 +136,33 @@
         <section class="main-products">
             <div class="product-grid">
                 <!-- Product 1 -->
-                <div class="product-card">
+                <div class="product-card" onclick="window.location.href='product-details.html'" style="cursor: pointer;">
                     <img src="assets/smartphone.png" alt="Smartphone" class="product-image">
                     <div class="product-info">
                         <p class="product-price">$99.50</p>
                         <h3>GoPro HERO6 Black 4K Action Camera</h3>
                         <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">7.5 Orders • Free Shipping</p>
-                        <button class="buy-now-btn">Buy Now</button>
+                        <button class="buy-now-btn" onclick="event.stopPropagation(); window.location.href='product-details.html'">Buy Now</button>
                     </div>
                 </div>
                 <!-- Product 2 -->
-                <div class="product-card">
+                <div class="product-card" onclick="window.location.href='product-details.html'" style="cursor: pointer;">
                     <img src="assets/laptop.png" alt="Laptop" class="product-image">
                     <div class="product-info">
                         <p class="product-price">$1,200.00</p>
                         <h3>Canon EOS 2000D EF-S 18-55mm IS II</h3>
                         <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">12 Orders • $10 Shipping</p>
-                        <button class="buy-now-btn">Buy Now</button>
+                        <button class="buy-now-btn" onclick="event.stopPropagation(); window.location.href='product-details.html'">Buy Now</button>
                     </div>
                 </div>
                 <!-- Product 3 -->
-                <div class="product-card">
+                <div class="product-card" onclick="window.location.href='product-details.html'" style="cursor: pointer;">
                     <img src="assets/headphones.png" alt="Headphones" class="product-image">
                     <div class="product-info">
                         <p class="product-price">$150.00</p>
                         <h3>Samsung Galaxy S22 Ultra 5G - Phantom Black</h3>
                         <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">50+ Orders • Free Shipping</p>
-                        <button class="buy-now-btn">Buy Now</button>
+                        <button class="buy-now-btn" onclick="event.stopPropagation(); window.location.href='product-details.html'">Buy Now</button>
                     </div>
                 </div>
                 <!-- More products... -->
@@ -300,5 +300,7 @@
         </div>
     </footer>
 
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 </body>
 </html>

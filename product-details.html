@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Brand</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Troubleshooting styles to force layout */
+        .product-details-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 30px 0;
+            background: #fff;
+            margin-top: 20px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .product-gallery {
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
+        }
+        .product-info-panel {
+            flex: 1;
+            min-width: 300px;
+        }
+        .main-image-container {
+            width: 100%;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 20px;
+            background: #fff;
+        }
+        .main-image-container img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: contain;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .thumbnail-list {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .thumb {
+            width: 80px;
+            height: 80px;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .thumb.active { border-color: #0D6EFD; }
+        .thumb img { width: 100%; height: 100%; object-fit: contain; }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-top">
+            <a href="index.html" class="logo">
+                <i class="ph ph-cube" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+                <span>Brand</span>
+            </a>
+            <div class="search-container" id="search-bar">
+                <select id="search-category" name="category">
+                    <option value="all">All category</option>
+                </select>
+                <input type="text" placeholder="Search..." id="search-input">
+                <button type="submit" class="search-btn">Search</button>
+            </div>
+            <nav class="user-menu">
+                <div class="menu-item"><i class="ph ph-shopping-cart"></i><span>My cart</span></div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="min-height: 800px;">
+        <nav class="breadcrumbs" style="padding: 20px 0;">
+            <a href="index.html">Home</a> / <a href="products.html">Electronics</a> / <span>Product Details</span>
+        </nav>
+
+        <section class="product-details-container">
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img src="assets/laptop.png" alt="Product" id="main-product-image">
+                </div>
+                <div class="thumbnail-list">
+                    <div class="thumb active"><img src="assets/laptop.png" alt="T1"></div>
+                    <div class="thumb"><img src="assets/smartphone.png" alt="T2"></div>
+                    <div class="thumb"><img src="assets/headphones.png" alt="T3"></div>
+                </div>
+            </div>
+
+            <div class="product-info-panel">
+                <div class="availability-badge" style="background: #E5F1FF; color: #0D6EFD; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; width: fit-content; margin-bottom: 15px;">In stock</div>
+                <h1 style="font-size: 2rem; margin-bottom: 10px;">Premium Performance Laptop</h1>
+                <div class="price-container" style="padding: 15px 0; border-top: 1px solid #efefef; display: flex; align-items: baseline; gap: 10px;">
+                    <span class="current-price" style="font-size: 2rem; font-weight: 800;">$1,299.00</span>
+                    <span style="text-decoration: line-through; color: #999;">$1,499.00</span>
+                </div>
+                
+                <p style="margin: 20px 0; color: #555; line-height: 1.6;">Our flagship laptop with pro-grade performance and a stunning display.</p>
+                
+                <div class="product-options" style="margin: 20px 0;">
+                    <label style="display: block; font-weight: 600; margin-bottom: 8px;">Storage Size</label>
+                    <select id="size-select" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; appearance: none; background: #fff;">
+                        <option value="256gb">256GB SSD</option>
+                        <option value="512gb" selected>512GB SSD (+ $100)</option>
+                        <option value="1tb">1TB SSD (+ $250)</option>
+                    </select>
+                </div>
+
+                <div class="actions" style="display: flex; gap: 15px; margin-top: 30px;">
+                    <div class="quantity-selector" style="display: flex; border: 1px solid #ddd; border-radius: 8px; width: fit-content;">
+                        <button type="button" class="qty-btn" id="qty-minus" style="padding: 10px 15px; background: none; border: none; cursor: pointer; font-family: inherit; font-size: 1.2rem;">-</button>
+                        <input type="number" value="1" id="product-qty" style="width: 50px; border: none; text-align: center; border-left: 1px solid #ddd; border-right: 1px solid #ddd; font-family: inherit; font-size: 1.1rem;">
+                        <button type="button" class="qty-btn" id="qty-plus" style="padding: 10px 15px; background: none; border: none; cursor: pointer; font-family: inherit; font-size: 1.2rem;">+</button>
+                    </div>
+                    <button style="flex: 1; background: #0D6EFD; color: #fff; border: none; border-radius: 8px; padding: 15px; font-weight: 700; cursor: pointer;">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-tabs" style="margin-top: 60px;">
+            <div style="display: flex; gap: 20px; border-bottom: 2px solid #eee;">
+                <button class="tab-btn active" data-tab="desc" style="padding: 15px; background: none; border: none; border-bottom: 2px solid #0D6EFD; color: #0D6EFD; font-weight: 600; cursor: pointer;">Description</button>
+                <button class="tab-btn" data-tab="reviews" style="padding: 15px; background: none; border: none; cursor: pointer; color: #999;">Reviews (32)</button>
+            </div>
+            <div id="tab-display" style="padding: 30px; border: 1px solid #eee; border-top: none; min-height: 200px;">
+                <p>Advanced Octa-core Processor for seamless multitasking and ProMotion display.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" style="background: #fff; padding: 60px 0; border-top: 1px solid #eee; margin-top: 100px;">
+        <div class="container" style="text-align: center;">
+            <p>© 2023 Brand Ecommerce. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
